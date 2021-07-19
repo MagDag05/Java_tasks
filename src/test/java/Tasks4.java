@@ -141,6 +141,37 @@ public class Tasks4 {
 //        System.out.println(Math.round( 100) / 3);
 //    }
 
+//    Task 12
+
+    static void isVowelOrNotSwitch(char ch)
+    {
+        String check = "consonant";
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                check = "vowel";
+        }
+        System.out.println(check);
+
+    }
+
+    static void vowelOrConsonant (char ch)
+    {
+        if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                ch == 'o' || ch == 'u' || ch == 'A' ||
+                ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            System.out.println("Vowel");
+        else
+            System.out.println("Consonant");
+    }
 
     //Task 13
     private static void leapYear(int year) {
@@ -169,15 +200,16 @@ public class Tasks4 {
         }}
 //Task 15
 
-        private static String ageRange(int age) {
+        private static void ageRange(int age) {
 
 
             String permission = age >18 ? "Drive car" : "Do not drive car";
 
             System.out.println(permission);
-            return permission;
+
 
         }
+
 
 
 
@@ -190,6 +222,8 @@ public class Tasks4 {
          leapYear(1600);
          numbers(100,100);
          ageRange(19);
+         isVowelOrNotSwitch('E');
+        vowelOrConsonant('X');
 
    }
 }
