@@ -123,8 +123,6 @@ public class Tasks4 {
 
 
 
-
-
 //11.	Исправьте код так, чтобы распечатался
 //    a)	результат  33.333333333333336,
 //    b)	затем результат 33.333332,
@@ -143,7 +141,7 @@ public class Tasks4 {
 
 //    Task 12
 
-    static void isVowelOrNotSwitch(char ch)
+    static void vowelOrConsonantSwitch(char ch)
     {
         String check = "consonant";
         switch (ch) {
@@ -198,20 +196,29 @@ public class Tasks4 {
             default  : System.out.println("-1");
 
         }}
+
 //Task 15
 
         private static void ageRange(int age) {
 
-
             String permission = age >18 ? "Drive car" : "Do not drive car";
 
             System.out.println(permission);
-
-
         }
 
+//       Task 16
 
+    private static void add (int one, int two) {
 
+        int result = one + two;
+        System.out.println(result);
+    }
+
+    private static void multiply (int one, int two) {
+
+        int result = one * two;
+        System.out.println(result);
+    }
 
 
    public static void main(String[] args) {
@@ -219,11 +226,13 @@ public class Tasks4 {
        comparingOfValues(3333, 9999);
        booleanComparasing(555);
        ternaryOperator();
-         leapYear(1600);
-         numbers(100,100);
-         ageRange(19);
-         isVowelOrNotSwitch('E');
-        vowelOrConsonant('X');
+       leapYear(1600);
+       numbers(100,100);
+       ageRange(19);
+       vowelOrConsonantSwitch('E');
+       vowelOrConsonant('X');
+       add(11,1);
+       multiply(15,15);
 
    }
 }
